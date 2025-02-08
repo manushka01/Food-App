@@ -1,0 +1,153 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+:root {
+  --primary: rgb(17, 1, 32);
+  --secondary: rgb(230, 206, 72);
+  --accent: rgb(184, 177, 180);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  height: 80px;
+}
+
+h1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;  /* allows h1 to be aligned with the nav */
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--secondary);
+  text-shadow: 0px 0px 15px rgba(230, 206, 72, 0.8);
+  padding: 2px 5px;
+  border-radius: 7px;
+  cursor: default;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  color: var(--secondary);
+  font-weight: 600;
+  list-style: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-family: sans-serif;
+  text-decoration: none;
+  /* text-shadow: 0px 0px 15px rgba(109, 238, 34, 0.8); */
+  border-radius: 7px;
+  transition: 0.3s ease;
+}
+li:hover {
+  text-shadow: var(--secondary) 0px 0px 10px;
+}
+/* End of header */
+
+#hero img {
+  width: 100%;
+  height: auto;
+}
+#hero {
+  width: 40%;
+  height: auto;
+}
+
+
+#seenFirst {
+  padding: 20px 5%;
+  display: flex;
+  background-color: var(--primary);
+  text-shadow: none;
+  justify-content: space-between;
+}
+#seenFirst h1 {
+  justify-content: flex-start;
+  font-size: 38px;
+}
+
+#topFlexLeft {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+#topFlexLeft h1 {
+  padding: 0;
+  text-shadow: none;
+  cursor: auto;
+}
+
+#impText {
+  padding: 0;
+  margin: 0;
+  border-bottom: 3px solid var(--secondary);
+  border-radius: 0;
+  list-style: disc;
+}
+#impText strong {
+  color: var(--secondary);
+  font-size: larger;
+}
+#impText:hover {
+  text-shadow: none;
+}
+
+#subContent {
+  background-color: var(--primary);
+  padding: 20px 5%;
+}
+
+#favrecipes {
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  height: fit-content;
+  background-color: hsla(200, 73%, 80%, 0.5);
+}
+
+#favrecipes h2 {
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  background-color: var(--accent);
+}
+
+.recipeColumns img, .recipeColumns a {
+  margin: 5px;
+  border-radius: 5px;
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+
+/*  */
+footer {
+  background-color: var(--accent);
+  padding: 0px 5% 20px;
+}
+
+footer p {
+  text-align: center;
+  color: #000;
+}
+
+footer a, footer img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  background: linear-gradient(to left, rgba(0,0,0,0), rgba(255,255,255,1)40%, rgba(255,255,255,1)60%, rgba(0,0,0,0));
+}

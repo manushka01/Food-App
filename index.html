@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://developer.edamam.com/attribution/badge.js"></script>
+    <title>Food Maker App</title>
+</head>
+
+<body>
+    <header>
+        <h1> 🍔 Food App</h1>
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./FavoriteRecipes.html">
+                    <li>Favorites</li>
+                </a>
+                <a href="#">
+                    <li>History</li>
+                </a>
+                <a href="#">
+                    <li>Services</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="seenFirst">
+            <div id="topFlexLeft">
+                <h1>Find a recipe that fits your style.</h1>
+                <p>Our goal is to satisfy our customers through helping them find the right meal that they want to make. We provide a variety of recipes designated to your choices. Check out our filters below to find what you're looking for.
+                <br>Find a recipe that you like? Add it to your favorites by clicking the "Add to Favorites" button on the right of the recipe card so that you can refer back to it in the favorites tab.
+                <br>
+                <br>
+                </p>
+                <ul>
+                    <li id="impText"><strong>Important:</strong> In order to view the recipe, click on the photo of the recipe you want.</li>
+                </ul>
+            </div>
+            <div id="hero"></div>
+        </div>
+        <div id="subContent">
+            <div id="filter">
+                <div class="foodCateFlex">
+                    <h2 class="food-category">Diet</h2>
+                    <div class="select">
+                        <select id="diet">
+                            <option>any</option>
+                            <option>high-protein</option>
+                            <option>low-carb</option>
+                            <option>low-fat</option>
+                            <option>low-sodium</option>
+                            <option>balanced</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="foodCateFlex">
+                    <h2 class="food-category">Cuisine Type</h2>
+                    <div class="select">
+                        <select id="cuisine-type">
+                            <option>any</option>
+                            <option>American</option>
+                            <option>Asian</option>
+                            <option>Chinese</option>
+                            <option>Italian</option>
+                            <option>Mediterranean</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="foodCateFlex">
+                    <h2 class="food-category">Meal Type</h2>
+                    <div class="select">
+                        <select id="meal-type">
+                            <option>any</option>
+                            <option>Breakfast</option>
+                            <option>Snack</option>
+                            <option>Lunch</option>
+                            <option>Dinner</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="foodCateFlex">
+                    <h2 class="food-category">Health Label</h2>
+                    <div class="select">
+                        <select id="health-label">
+                            <option>any</option>
+                            <option>alcohol-cocktail</option>
+                            <option>dairy-free</option>
+                            <option>gluten-free</option>
+                            <option>low-sugar</option>
+                            <option>Vegetarian</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <button id="searchbtn">Search for recipe</button>
+            
+            <div id="recipes">
+            <h2>Recipes:</h2>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div id="edamam-badge" data-color="white"></div>
+        <p>&copy;2025 Team Four | All Rights Reserved</p>
+    </footer>
+    <script src="assets/script.js"></script>
+</body>
+</html>
